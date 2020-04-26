@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="exo6.xsl"?>
+
+<exercice n="6">
+    <titre>EXERCICE 6</titre>
+    <description>Exploration d'un fichier TEI</description>
+    <question n="1">
+        <consigne chemin="./exercices/exo6/consigne_exo6_1.jpg"></consigne>
+        <reponse xsl="./exercices/exo6/Exo6_Partie1.xsl" xslhtml="./exercices/exo6/Exo6_Partie1.html" sortie="./exercices/exo6/dormeur-tei1.xml"></reponse>
+    </question>
+    <question n="2">
+        <consigne chemin="./exercices/exo6/consigne_exo6_2.jpg"></consigne>
+        <reponse xsl="./exercices/exo6/Exo6_Partie2.xsl" xslhtml="./exercices/exo6/Exo6_Partie2.html" sortie="./exercices/exo6/dormeur-tei2.xml"></reponse>
+    </question>
+    <question n="3">
+        <consigne chemin="./exercices/exo6/consigne_exo6_3.jpg"></consigne>
+        <reponse xsl="./exercices/exo6/Exo6_Partie3.xsl" xslhtml="./exercices/exo6/Exo6_Partie3.html" sortie="./exercices/exo6/dormeur-tei3.xml"></reponse>
+    </question>
+    <question n="4">
+        <consigne chemin="./exercices/exo6/consigne_exo6_4.jpg"></consigne>
+        <reponse xsl="./exercices/exo6/Exo6_Partie4.xsl" xslhtml="./exercices/exo6/Exo6_Partie4.html" sortie="./exercices/exo6/dormeur-tei4.xml"></reponse>
+    </question>
+    <question n="5">
+        <consigne chemin="./exercices/exo6/consigne_exo6_5.jpg"></consigne>
+        <reponse xsl="./exercices/exo6/Exo6_Partie5.xsl" xslhtml="./exercices/exo6/Exo6_Partie5.html" sortie="./exercices/exo6/dormeur-tei5.xml"></reponse>
+    </question>
+    <question n="6">
+        <consigne chemin="./exercices/exo6/consigne_exo6_6.jpg"></consigne>
+        <reponse xsl="./exercices/exo6/Exo6_Partie6.xsl" xslhtml="./exercices/exo6/Exo6_Partie6.html" sortie="./exercices/exo6/dormeur-tei6.xml"></reponse>
+    </question>
+    <question n="7">
+        <consigne chemin="./exercices/exo6/consigne_exo6_7.jpg"></consigne>
+        <reponse xsl="./exercices/exo6/Exo6_Partie7.xsl" xslhtml="./exercices/exo6/Exo6_Partie7.html" sortie="./exercices/exo6/dormeur-tei7.xml"></reponse>
+    </question>
+    <question n="8">
+        <consigne chemin="./exercices/exo6/consigne_exo6_8.jpg"></consigne>
+        <reponse xsl="./exercices/exo6/Exo6_Partie8.xsl" xslhtml="./exercices/exo6/Exo6_Partie8.html" sortie="./exercices/exo6/dormeur-tei8.xml"></reponse>
+    </question>
+    <question n="9">
+        <consigne chemin="./exercices/exo6/consigne_exo6_9.jpg"></consigne>
+        <reponse xsl="./exercices/exo6/Exo6_Partie9.xsl" xslhtml="./exercices/exo6/Exo6_Partie9.html" sortie="./exercices/exo6/dormeur-tei9.xml"></reponse>
+    </question>
+</exercice>

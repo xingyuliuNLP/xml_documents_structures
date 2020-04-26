@@ -1,0 +1,19 @@
+<!ELEMENT ensemble (bouteille+)>
+<!ELEMENT bouteille (metainfos, compositions, origine)>
+<!ATTLIST bouteille n CDATA #REQUIRED>
+<!ELEMENT metainfos (marque, capacite, codebarre, ph)>
+<!ELEMENT marque (#PCDATA)>
+<!ELEMENT capacite (#PCDATA)>
+<!ATTLIST capacite unite CDATA #REQUIRED>
+<!ELEMENT codebarre (#PCDATA)>
+<!ELEMENT ph (#PCDATA)>
+<!ELEMENT compositions (ion+, autres*)>
+<!ELEMENT ion (element, concentration)>
+<!ATTLIST ion type CDATA #REQUIRED>
+<!ELEMENT element (#PCDATA)>
+<!ELEMENT concentration (#PCDATA)>
+<!ATTLIST concentration unite CDATA #REQUIRED>
+<!ELEMENT autres (#PCDATA)>
+<!ELEMENT origine (source, dept)>
+<!ELEMENT source (#PCDATA)>
+<!ELEMENT dept (#PCDATA)>

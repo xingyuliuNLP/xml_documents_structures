@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="exo16.xsl"?>
+
+<exercice n="16">
+	<titre>EXERCICE 16</titre>
+	<description>Exploration d'un dictionnaire</description>
+  <source xml="./dela-fr-public-u8.dic.xml">Fichier de Travail : dela-fr-public-u8.dic.xml</source>
+	<question n="1" id="XPath">
+		<partie n="1">
+			<consigne>Compter le nombre d’entrée du dictionnaire</consigne>
+			<reponse>count(/dico/entry)</reponse>
+      <resultat>201355</resultat>
+			</partie>
+		<partie n="2">
+			<consigne>Compter les différents types de catégories disponibles dans le fichier</consigne>
+			<reponse>count(distinct-values(/dico/entry/pos/@name))</reponse>
+      <resultat>22</resultat>
+			</partie>
+	</question>
+	<question n="2" id="XSLT">
+		<partie n="1">
+			<consigne>Construire une feuille de styles XSLT pour extraire les 200 éléments entry à partir du 2000ième (les éléments 2001 à 2200). En sortie : un fichier XML avec le contenu initial complet des entry visées.</consigne>
+			<reponse xsl="./extrait1.xsl" xml="./sortie_extrait1.xml">xsltproc extrait1.xsl dela-fr-public-u8.dic.xml > sortie_extrait1.xml</reponse>		
+		</partie>
+		<partie n="2">
+			<consigne>Construire une feuille de style permettant d'extraire une liste de toutes les formes de tous les verbes du dictionnaire. En sortie un fichier TXT.</consigne>
+			<reponse xsl="./extrait2.xsl" xml="./sortie_extrait2.txt">xsltproc extrait2.xsl dela-fr-public-u8.dic.xml > sortie_extrait2.txt</reponse>
+		</partie>
+	</question>
+	<question n="3" id="XQuery">
+			<consigne>Compter le nombre de verbes, de noms etc.</consigne>
+			<reponse xqy="./exo16.xq" xml="./sortie_xquery.xml"></reponse>
+	</question>
+</exercice>

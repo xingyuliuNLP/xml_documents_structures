@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ensemble SYSTEM "reponse.dtd">
+<ensemble>
+  <bouteille n="1">
+    <metainfos>
+      <marque>Cristaline</marque>
+      <capacite unite="cl">150</capacite>
+      <codebarre>3274080005003</codebarre>
+      <ph>7,45</ph>
+    </metainfos>
+    <compositions>
+      <ion type="positif">
+        <element>calcium</element>
+        <concentration unite="mg/l">71</concentration>
+      </ion>
+      <ion type="positif">
+        <element>magnésium</element>
+        <concentration unite="mg/l">5,5</concentration>
+      </ion>
+      <ion type="negatif">
+        <element>chlorure</element>
+        <concentration unite="mg/l">20</concentration>
+      </ion>
+      <ion type="negatif">
+        <element>nitrate</element>
+        <concentration unite="mg/l">1</concentration>
+      </ion>
+      <autres>fer</autres>
+    </compositions>
+    <origine>
+      <source>St-Cyr la Source</source>
+      <dept>Loiret</dept>
+    </origine>
+  </bouteille>
+  <bouteille n="2">
+    <metainfos>
+      <marque>Cristaline</marque>
+      <capacite unite="cl">50</capacite>
+      <codebarre>3268840001008</codebarre>
+      <ph>7,4</ph>
+    </metainfos>
+    <compositions>
+      <ion type="positif">
+        <element>calcium</element>
+        <concentration unite="mg/l">98</concentration>
+      </ion>
+      <ion type="positif">
+        <element>magnésium</element>
+        <concentration unite="mg/l">4</concentration>
+      </ion>
+      <ion type="negatif">
+        <element>chlorure</element>
+        <concentration unite="mg/l">3,6</concentration>
+      </ion>
+      <ion type="negatif">
+        <element>nitrate</element>
+        <concentration unite="mg/l">2</concentration>
+      </ion>
+    </compositions>
+    <origine>
+      <source>Aurèle</source>
+      <dept>Alpes Maritimes</dept>
+    </origine>
+  </bouteille>
+  <bouteille n="3">
+    <metainfos>
+      <marque>Volvic</marque>
+      <capacite unite="cl">50</capacite>
+      <codebarre>3057640117008</codebarre>
+      <ph>7</ph>
+    </metainfos>
+    <compositions>
+      <ion type="positif">
+        <element>calcium</element>
+        <concentration unite="mg/l">11,5</concentration>
+      </ion>
+      <ion type="positif">
+        <element>magnésium</element>
+        <concentration unite="mg/l">8</concentration>
+      </ion>
+      <ion type="negatif">
+        <element>chlorure</element>
+        <concentration unite="mg/l">13,5</concentration>
+      </ion>
+      <ion type="negatif">
+        <element>nitrate</element>
+        <concentration unite="">6,3</concentration>
+      </ion>
+      <autres>silice</autres>
+    </compositions>
+    <origine>
+      <source>Volvic</source>
+      <dept>Puy-de-Dôme</dept>
+    </origine>
+  </bouteille>
+</ensemble>

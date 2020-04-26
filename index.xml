@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="index.xsl"?>
+
+<accueil>
+  <references>
+    <cours>Documents Structurés</cours>
+    <formation>Master Traitement Automatiques des Langues</formation>
+    <etablissement>Université Sorbonne Nouvelle</etablissement>
+    <annee>2019-2020</annee>
+    <enseignant>Serge FLEURY</enseignant>
+    <projet>Voici l'aboutissement du projet XML-XPATH-XSLT-XQUERY, effectué dans le cadre du master en Traitement Automatique des Langues (TAL), formation qui résulte d’un partenariat entre les universités Paris III Sorbonne Nouvelle, Paris X Nanterre et l’Institut National de Langues Orientales (INALCO).</projet>
+    <intro>Ce site, qui contient les réponses des exercices proposés, a été construit intégralement en format XML, exception faite pour des fichiers formatés en HTML qui servent à embellir l'affichage de nos scripts. On vous souhaite une bonne lecture !</intro>
+  </references>
+  <etudiants>
+    <etudiant>
+      <nom>Xingyu LIU</nom>
+      <mail>rebecca.xingyu.liu[at]gmail.com</mail>
+      <etablissement>Université Sorbonne Nouvelle</etablissement>
+    </etudiant>
+    <etudiant>
+      <nom>Xiaoou WANG</nom>
+      <mail>xiaoouwangfrance[at]gmail.com</mail>
+      <etablissement>Université Sorbonne Nouvelle</etablissement>
+    </etudiant>
+  </etudiants>
+
+  <exercices>
+    <exercice n="1">
+      <titre>EXERCICE 1</titre>
+      <description>Structuration de l'information</description>
+      <lien id="exo1.xml"></lien>
+      <image chemin="./images/exo1.jpg"></image>
+    </exercice>
+    <exercice n="2">
+      <titre>EXERCICE 2</titre>
+      <description>Rédaction d'une DTD pour une bibliographie</description>
+      <lien id="exo2.xml"></lien>
+      <image chemin="./images/exo2.jpg"></image>
+    </exercice>
+    <exercice n="3">
+      <titre>EXERCICE 3</titre>
+      <description>Construction d'un document TEI</description>
+      <lien id="exo3.xml"></lien>
+      <image chemin="./images/exo3.png"></image>
+    </exercice>
+    <exercice n="4">
+      <titre>EXERCICE 4</titre>
+      <description>Funeral Blues</description>
+      <lien id="exo4.xml"></lien>
+      <image chemin="./images/exo4.jpg"></image>
+    </exercice>
+    <exercice n="6">
+      <titre>EXERCICE 6</titre>
+      <description>Exploration d'un fichier TEI</description>
+      <lien id="exo6.xml"></lien>
+      <image chemin="./images/exo6.jpg"></image>
+    </exercice>
+    <exercice n="7">
+      <titre>EXERCICE 7</titre>
+      <description>Corpus Prématurés00</description>
+      <lien id="exo7.xml"></lien>
+      <image chemin="./images/exo7.jpg"></image>
+    </exercice>
+    <exercice n="8">
+      <titre>EXERCICE 8</titre>
+      <description>Exploration d'une recommandation W3C taggée</description>
+      <lien id="exo8.xml"></lien>
+      <image chemin="./images/exo8.png"></image>
+    </exercice>
+    <exercice n="9">
+      <titre>EXERCICE 9</titre>
+      <description>Air France</description>
+      <lien id="exo9.xml"></lien>
+      <image chemin="./images/exo9.gif"></image>
+    </exercice>
+    <exercice n="11">
+      <titre>EXERCICE 11</titre>
+      <description>Petit projet : un conte</description>
+      <lien id="exo11.xml"></lien>
+      <image chemin="./images/exo11.jpg"></image>
+    </exercice>
+    <exercice n="13.1">
+      <titre>EXERCICE 13.1</titre>
+      <description>Extraction dans les Fils RSS du Monde : 2017</description>
+      <lien id="exo13_1.xml"></lien>
+      <image chemin="./images/exo13.png"></image>
+    </exercice>
+    <exercice n="13.2">
+      <titre>EXERCICE 13.2</titre>
+      <description>Extraction dans les Fils RSS du Monde : 2018</description>
+      <lien id="exo13_2.xml"></lien>
+      <image chemin="./images/exo13.png"></image>
+    </exercice>
+    <exercice n="14">
+      <titre>EXERCICE 14</titre>
+      <description>Base Trameur From Rhapsodie</description>
+      <lien id="exo14.xml"></lien>
+      <image chemin="./images/exo14.png"></image>
+    </exercice>
+    <exercice n="15">
+      <titre>EXERCICE 15</titre>
+      <description>Le corpus ECRISCOL</description>
+      <lien id="exo15.xml"></lien>
+      <image chemin="./images/exo15.jpg"></image>
+    </exercice>
+    <exercice n="16">
+      <titre>EXERCICE 16</titre>
+      <description>Exploration d'un dictionnaire</description>
+      <lien id="exo16.xml"></lien>
+      <image chemin="./images/exo16.gif"></image>
+    </exercice>
+    <exercice n="17">
+      <titre>EXERCICE 17</titre>
+      <description>Et pour finir, un peu de contrepèteries!</description>
+      <lien id="exo17.xml"></lien>
+      <image chemin="./images/exo17.jpg"></image>
+    </exercice>
+  </exercices>
+</accueil>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="exo3.xsl"?>
+
+<exercice n="3">
+  <titre>EXERCICE 3</titre>
+  <description>Construction d'un document TEI</description>
+  <consigne>Le but de cet exercice est d’enrichir un fichier XML/TEI existant avec des informations morpho-syntaxtiques obtenues sur le site UDPipe.</consigne>
+  <question n="1" colonne="Greville_FRA02301">
+    <reponse tei="./FRA02301_Greville_0411.xml"></reponse>
+  </question>
+  <question n="2" colonne="Maupassant_FRA02701">
+    <reponse tei="./FRA02301_Greville_0411.xml"></reponse>
+  </question>
+</exercice>
