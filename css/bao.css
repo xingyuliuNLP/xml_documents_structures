@@ -442,7 +442,11 @@ header.masthead .post-heading .meta {
 header.masthead .post-heading .meta a {
   color: #fff;
 }
-
+iframe{
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 10px 10px rgb(228, 218, 218);
+}
 @media only screen and (min-width: 768px) {
   header.masthead .post-heading h1 {
     font-size: 55px;
