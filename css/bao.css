@@ -92,6 +92,12 @@ figure img {
 	background: #18a367;
 } */
 
+.forme{
+  background-color: rgba(255, 166, 0, 0.384);
+}
+.pos{
+  background-color: rgba(0, 0, 255, 0.123);
+}
 figure.effect-layla img {
 	min-width: 100%;
 	height: -webkit-calc(100% + 40px);

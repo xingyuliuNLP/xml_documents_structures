@@ -6,7 +6,7 @@
   <description>Exploration d'un dictionnaire</description>
   <source xml="./baseTrameurFromRhapsodie.xml">Fichier de Travail : base TrameurFromRhapsodie.xml</source>
   <question n="1" id="XSLT">
-    <commande>xsltproc 14-1-[1-6].xsl baseTrameurFromPhapsodie.xml > sortie-14-1-[1-6].(txt|html)</commande>
+    <commande>xsltproc 14-1-[1-6].xsl baseTrameurFromPhapsodie.xml (| sort | uniq -c | sort -gr) > sortie-14-1-[1-6].{txt,html}</commande>
     <partie n="1">
       <consigne>Construire une feuille de styles pour afficher uniquement le texte (sortie TXT)</consigne>
       <reponse xsl="./14-1-1.xsl"></reponse>
