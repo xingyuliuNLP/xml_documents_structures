@@ -77,11 +77,23 @@
                   <span class="subheading">- Projet du cours </span
               >
                   <p align="justify">
-                  <xsl:value-of select="accueil/references/projet"/>
+                    <xsl:value-of select="accueil/references/projet"/>
                   </p>
                   <p align="justify">
-                  <xsl:value-of select="accueil/references/intro"/>
+                    <xsl:value-of select="accueil/references/intro"/>
                   </p>
+                  <p align="justify">
+                    <xsl:value-of select="accueil/references/outils"/>
+                  </p>
+                  <div>
+                    <a href='https://www.oxygenxml.com/'>
+                      <img src='./img/logox.jpg' />
+                    </a>
+                    <a href='http://basex.org/'>
+                      <img src='./img/logob.jpg' />
+                    </a>
+
+                  </div>
                 </div>
               </div>
             </div>

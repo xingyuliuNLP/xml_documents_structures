@@ -8,8 +8,9 @@
     <etablissement>Université Sorbonne Nouvelle</etablissement>
     <annee>2019-2020</annee>
     <enseignant>Serge FLEURY</enseignant>
-    <projet>Voici l'aboutissement du projet XML-XPATH-XSLT-XQUERY, effectué dans le cadre du master en Traitement Automatique des Langues (TAL), formation qui résulte d’un partenariat entre les universités Paris III Sorbonne Nouvelle, Paris X Nanterre et l’Institut National de Langues Orientales (INALCO).</projet>
-    <intro>Ce site, qui contient les réponses des exercices proposés, a été construit intégralement en format XML, exception faite pour des fichiers formatés en HTML qui servent à embellir l'affichage de nos scripts. On vous souhaite une bonne lecture !</intro>
+    <projet>Ce site accueille l'ensemble des exercices effectués pour le cours Document Structuré, assuré par S.F. et I.G., dans le cadre du second semestre de la première année de master Traitement Automatique des Langues, à l'Université Paris 3 Sorbonne Nouvelle. </projet>
+    <intro>Ce site, qui contient les réponses des exercices proposés, a été construit intégralement en format XML. Nous avons pu effectuer l'édition de documents XML, les requêtes XPath ou XQuery et la transformation XSLT. </intro>
+    <outils>Deux outils ont été principalement utilisés pour effectuer le devoir dont Oxygen XML Editor pour la vérification/validation des documents et les requêtes XPath et Base X pour les requêtes XQuery.</outils>
   </references>
   <etudiants>
     <etudiant>

@@ -110,7 +110,7 @@
                         <xsl:text> : </xsl:text>
                         <xsl:value-of select="@id"/>
                       </h3>
-                      <p> Command line :</p>
+                      <p> Ligne de commande générale :</p>
                       <code>
                         <xsl:value-of select="//commande"/>
                       </code>
@@ -122,6 +122,12 @@
                       <p align="justify">
                         <xsl:value-of select="./consigne"/>
                       </p>
+                      <xsl:if test="@n = '4'">
+                        <div>
+                          <xsl:variable name="img1" select="//consigne/@img"/>
+                          <img width="900" hieght="300" src="{$img1}"/>
+                        </div>
+                      </xsl:if>
                       <br/>
                       <br/>
                       <xsl:for-each select="./reponse">

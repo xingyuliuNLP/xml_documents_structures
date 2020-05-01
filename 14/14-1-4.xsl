@@ -1,41 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-<!--exo14_XSLT_q4.xsl Construire une feuille de styles pour extraire (au format TXT) les items en relation de dépendance syntaxique de type OBJ (les classer et les compter)-->
-    <!--(head -n 1 exo13_XSLT_q4.txt; tail -n +2 exo13_XSLT_q4.txt | sort | uniq -ic | sort -gr) > exo13_XSLT_sort_q4.txt-->
+    <!--exo14_XSLT_q4.xsl Construire une feuille de styles pour extraire (au format TXT) les items en relation de dépendance syntaxique de type OBJ (les classer et les compter)-->
     <xsl:output method="text" encoding="utf-8"/>
     <xsl:template match="/">
-
-            <xsl:text>obj(Gouverneur&lt;----Dépendant)
+        <xsl:text>obj(Gouverneur&lt;--Dépendant)
 </xsl:text>
-            <xsl:apply-templates select="baselexicometrique/trame/items/item" mode="OBJ"
-                > </xsl:apply-templates>
-        
+        <xsl:apply-templates select="/baselexicometrique/trame/items/item"/>
     </xsl:template>
-    
-    <xsl:template match="item" mode="OBJ">
-        <xsl:if test="matches(./a[7],'OBJ')">
-            <xsl:variable name="dep_item" select="."/>
-            <xsl:variable name="dep_pos" select="number(@pos)"/>
-            <xsl:variable name="gov_pos"
-                select="number($dep_item/a[7]/replace($dep_item/a[7],'OBJ\((\d+)\)','$1'))"/>
-            <xsl:variable name="diff" select="number($gov_pos - $dep_pos)"/>
-            
-            <xsl:choose>
-                <xsl:when test="number($diff) > 0">
-                    <xsl:value-of select="following-sibling::item[number($diff)]/l"/>
-                    <xsl:text> </xsl:text>
-                </xsl:when>
-                <xsl:otherwise>
-                    <xsl:value-of select="preceding-sibling::item[abs($diff)]/l"/>
-                    <xsl:text> </xsl:text>
-                </xsl:otherwise>
-            </xsl:choose>
-            
-            <xsl:value-of select="$dep_item/l"/>
-            <xsl:text>
+    <xsl:template match="item">
+        <xsl:if test="./a[7][contains(text(), 'OBJ')]">
+            <xsl:variable name="idGov"
+                select="substring-before(substring-after(./a[7], 'OBJ('), ')')"/>
+            <xsl:variable name="idDep" select="@pos"/>
+            <xsl:variable name="dep" select="./f"/>
+            <xsl:variable name="itemGov" select="$idDep - $idGov"/>
+            <xsl:if test="$itemGov &gt; 0">
+                <!-- gouverneur AVANT l'objet -->
+                <xsl:value-of select="preceding-sibling::item[$itemGov]/f"/>
+                <xsl:text> </xsl:text>
+                <xsl:value-of select="$dep"/>
+                <xsl:text>
 </xsl:text>
+            </xsl:if>
+            <xsl:if test="$itemGov &lt; 0">
+                <!-- gouverneur APRES l'objet -->
+                <xsl:value-of select="$dep"/>
+                <xsl:text> </xsl:text>
+                <xsl:value-of select="following-sibling::item[-$itemGov]/f"/>
+                <xsl:text>
+</xsl:text>
+            </xsl:if>
         </xsl:if>
     </xsl:template>
-    
 </xsl:stylesheet>
-

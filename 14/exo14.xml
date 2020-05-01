@@ -23,7 +23,7 @@
       <resultat sortie="./sortie-14-1-3.txt"></resultat>
     </partie>
     <partie n="4">
-      <consigne>Construire une feuille de styles pour extraire (au format TXT) les items en relation de dépendance syntaxique de type OBJ (les classer et les compter)</consigne>
+      <consigne img="./14-1-4.jpg">Construire une feuille de styles pour extraire (au format TXT) les items en relation de dépendance syntaxique de type OBJ (les classer et les compter)</consigne>
       <reponse xsl="./14-1-4.xsl"></reponse>
       <resultat sortie="./sortie-14-1-4.txt"></resultat>
     </partie>
@@ -42,7 +42,7 @@
     <partie n="1">
       <consigne>Construire une requête pour extraire les items portant une relation de dépendance syntaxique de type SUB</consigne>
       <reponse xq="./14-2-1.xq"></reponse>
-      <resultat xml="./sortie-14-2-2.xml"></resultat>
+      <resultat xml="./sortie-14-2-1.xml"></resultat>
     </partie>
     <partie n="2">
       <consigne>Construire une requête pour extraire les items en relation de dépendance syntaxique de type SUB (on affichera les formes ou les lemmes connectés par cette relation)</consigne>
