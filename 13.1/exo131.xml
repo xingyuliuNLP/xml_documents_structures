@@ -3,7 +3,7 @@
 
 <exercice n="13">
   <titre>EXERCICE 13</titre>
-  <description>Extraction dans les Fils RSS du Monde : 2017</description>
+  <description>Extraction-Fils RSS-Le Monde-2017</description>
   <source xml="./3208-2017-v2.xml">Fichier de Travail : rubrique "A la Une" 2017 etiqueté avec TreeTagger</source>
   <question n="1" id="XSLT">
     <commande>xsltproc 13-1-[1-6].xsl 3208-2017-v2.xml > sortie-13-1-[1-6].{txt,html}</commande>

@@ -122,12 +122,12 @@
                       <p align="justify">
                         <xsl:value-of select="./consigne"/>
                       </p>
-                      <xsl:if test="@n = '4'">
+                      <!-- <xsl:if test="@n = '4'">
                         <div>
                           <xsl:variable name="img1" select="//consigne/@img"/>
                           <img width="900" hieght="300" src="{$img1}"/>
                         </div>
-                      </xsl:if>
+                      </xsl:if> -->
                       <br/>
                       <br/>
                       <xsl:for-each select="./reponse">
@@ -161,7 +161,7 @@
                         <div align="center">
                           <xsl:variable name="var4" select="./@sortie"/>
                           <p>
-                            <iframe src="{$var4}" width="700" height="300" frameborder="5"/>
+                            <iframe src="{$var4}" width="900" height="300" frameborder="5"/>
                           </p>
                         </div>
                         <div align="center">
