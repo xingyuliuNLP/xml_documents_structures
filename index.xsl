@@ -24,7 +24,7 @@
       </head>
       <body>
         <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-light fixed-top" id="mainNav">
           <div class="container">
             <a href="./index.xml">
               <img src="img/logo.jpg" alt="logo" class="nav-brand" />
@@ -49,6 +49,9 @@
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="./6/exo6.xml">6</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./9/exo9.xml">9</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="./13.1/exo131.xml">13.1</a>

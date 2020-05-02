@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:stylesheet version="1.0" 
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <xsl:output method="html" encoding="UTF-8"/>
 
   <xsl:template match="/">
@@ -15,25 +16,20 @@
 
         <!-- Custom fonts for this template -->
         <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css"/>
-        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic"
-          rel="stylesheet" type="text/css"/>
-        <link
-          href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
-          rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css"/>
 
         <!-- Custom styles for this template -->
         <link href="../css/bao.css" rel="stylesheet"/>
       </head>
       <body>
         <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-light fixed-top" id="mainNav">
           <div class="container">
             <a href=".././index.xml">
               <img src="../img/logo.jpg" alt="logo" class="nav-brand"/>
             </a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-              data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
-              aria-label="Toggle navigation"> Menu <i class="fas fa-bars"/>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"> Menu <i class="fas fa-bars"/>
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
               <ul class="navbar-nav ml-auto">
@@ -116,7 +112,7 @@
                 <h5> Fichier DTD (pour créer un fichier XML valide) : </h5>
               </center>
               <br/>
-                <pre style="width: 60%; max-height: 25em; margin-left: 10em; margin-bottom: 3em;">
+              <pre style="width: 60%; max-height: 25em; margin-left: 10em; margin-bottom: 3em;">
                 <code class="language-markup" style="width: 100%;">
                   <xsl:value-of select="//dtd"/>
                 </code>

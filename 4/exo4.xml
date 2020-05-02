@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="exo4.xsl"?>
+
+<exercice n="4">
+  <titre>EXERCICE 4</titre>
+  <description>Funeral Blues</description>
+  <source xml="./FuneralBlues.xml">Fichier de Travail : un poème de W. H. Auden</source>
+  <question n="1" id="XSLT">
+    <partie n="1">
+      <consigne>Définir donc une feuille de style (appelée TEI2TablePremiersVers.xsl) qui, sur des textes respectant la proposition TEI, extraie le nom de l'auteur, du recueil, et le premier vers de chaque poème. Dans la feuille de style, dont le résultat est un document HTML, commenter en XML le fonctionnement global et les règles qui le nécessitent.</consigne>
+      <reponse xsl="./TEI2TablePremiersVers.xsl"></reponse>
+      <resultat sortie="./table.html"></resultat>
+    </partie>
+    <partie n="2">
+      <consigne>Définir une feuille de style (appelée NombreVers.xsl) dont le résultat est un document HTML qui affiche le nombre de vers du poème.</consigne>
+      <reponse xsl="./NombreVers.xsl"></reponse>
+      <resultat sortie="./nb.html"></resultat>
+    </partie>
+  </question>
+</exercice>

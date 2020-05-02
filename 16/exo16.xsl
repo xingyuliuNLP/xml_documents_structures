@@ -26,7 +26,7 @@
       </head>
       <body>
         <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-lignt fixed-top" id="mainNav">
+        <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-light bg-lignt fixed-top" id="mainNav">
           <div class="container">
             <a href=".././index.xml">
               <img src="../img/logo.jpg" alt="logo" class="nav-brand"/>

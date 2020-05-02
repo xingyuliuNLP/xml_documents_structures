@@ -83,12 +83,14 @@
         </header>
         <div class="container">
           <div class="row">
-            <div class="col-lg-9 col-md-10 mx-auto">
-              <h2>
-                <xsl:value-of select="exercice/titre"/>
-                <xsl:text> : </xsl:text>
-                <xsl:value-of select="exercice/description"/>
-              </h2>
+            <div class="col-lg-10 col-md-10 mx-auto">
+              <center>
+                <h2>
+                  <xsl:value-of select="exercice/titre"/>
+                  <xsl:text> : </xsl:text>
+                  <xsl:value-of select="exercice/description"/>
+                </h2>
+              </center>
               <xsl:variable name="var1" select="exercice/source/@xml"/>
               <center>
                 <a target="_blank" href="{$var1}" download="">
@@ -104,52 +106,6 @@
                 <xsl:choose>
                   <xsl:when test="@n = '1'">
                     <center>
-                    <h3> QUESTION <xsl:value-of select="@n"/>
-                      <xsl:text> : </xsl:text>
-                      <xsl:value-of select="@id"/>
-                    </h3>
-                    </center>
-                    <br/>
-                    <xsl:for-each select="./partie">
-                      <h4> Partie <xsl:value-of select="@n"/>
-                      </h4>
-                      <p>
-                    <xsl:value-of select="./consigne"/>
-                    </p>
-                      <xsl:for-each select="./reponse">
-                        <p align="center">
-                          <b>Requête XPath et résultat:</b>
-                        </p>
-                        <div class="row border border-danger">
-                        <p class="col-8 border-right border-danger">
-                        <code>
-                            <xsl:value-of select="."/>
-                        </code>
-                        </p>
-                        <p class="col-4">
-                        <xsl:value-of select="../resultat"/>
-                        </p>
-                        </div>
-                        <br/>
-                        <br/>
-                      </xsl:for-each>
-                      <xsl:if test="position() != last()">
-                        <center>
-                          <h4>
-                            <b>- - -</b>
-                          </h4>
-                        </center>
-                        <br/>
-                      </xsl:if>
-                    </xsl:for-each>
-                    <xsl:if test="position() != last()">
-                      <hr/>
-                      <br/>
-                    </xsl:if>
-                  </xsl:when>
-
-                  <xsl:when test="@n = '2'">
-                    <center>
                       <h3>QUESTION <xsl:value-of select="@n"/>
                         <xsl:text> : </xsl:text>
                         <xsl:value-of select="@id"/>
@@ -157,9 +113,7 @@
                     </center>
                     <br/>
                     <xsl:for-each select="./partie">
-                      <h4>Partie <xsl:value-of select="@n"/>
-                      </h4>
-                      <p>
+                      <p align="justify">
                         <xsl:value-of select="./consigne"/>
                       </p>
                       <br/>
@@ -173,7 +127,7 @@
                         <div align="center">
                           <xsl:variable name="var2" select="./@xsl"/>
                           <p>
-                            <iframe src="{$var2}" width="900" height="300" frameborder="5"/>
+                            <iframe src="{$var2}" width="600" height="300" frameborder="5"/>
                           </p>
                         </div>
                         <div align="center">
@@ -182,26 +136,24 @@
                             <button type="button" class="btn btn-outline-danger"
                               >Télécharger</button>
                           </a>
-                          <p> Command line :</p>
-                          <code>
-                            <xsl:value-of select="."/>
-                          </code>
                         </div>
-                        <br/>
-                        <br/>
+                      </xsl:for-each>
+                      <br/>
+                      <br/>
+                      <xsl:for-each select="./resultat">
                         <center>
                           <h5>
                             <b>Sortie :</b>
                           </h5>
                         </center>
                         <div align="center">
-                          <xsl:variable name="var4" select="./@xml"/>
+                          <xsl:variable name="var4" select="./@sortie"/>
                           <p>
-                            <iframe src="{$var4}" width="700" height="300" frameborder="5"/>
+                            <iframe src="{$var4}" width="600" height="300" frameborder="5"/>
                           </p>
                         </div>
                         <div align="center">
-                          <xsl:variable name="var5" select="./@xml"/>
+                          <xsl:variable name="var5" select="./@sortie"/>
                           <center>
                             <a target="_blank" href="{$var5}" download="">
                               <button type="button" class="btn btn-outline-danger"
@@ -226,8 +178,11 @@
                       <br/>
                     </xsl:if>
                   </xsl:when>
+
                 </xsl:choose>
               </xsl:for-each>
+              <hr/>
+              <hr/>
             </div>
           </div>
         </div>

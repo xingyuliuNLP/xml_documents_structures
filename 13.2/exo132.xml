@@ -1,53 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="exo131.xsl"?>
+<?xml-stylesheet type="text/xsl" href="exo132.xsl"?>
 
-<exercice n="13.1">
-  <titre>EXERCICE 13.1</titre>
-  <description>Extraction dans les Fils RSS du Monde : 2017</description>
-  <source xml="./3208-2017-v2.xml">Fichier de Travail : 3208-2017-v2.xml</source>
+<exercice n="13.2">
+  <titre>EXERCICE 13.2</titre>
+  <description>Extraction dans les Fils RSS du Monde : 2019</description>
+  <source xml="./sortieTalismane-3208.xml">Fichier de Travail : rubrique "A la Une" 2019 étiquetée avec Talismane </source>
   <question n="1" id="XSLT">
-    <commande>xsltproc 13-1-[1-6].xsl 3208-2017-v2.xml > sortie-13-1-[1-6].{txt,html}</commande>
+    <commande>xsltproc 13-1-[1-6].xsl sortieTalis-3208.xml > sortie-13-1-[1-6].{txt,html}</commande>
     <partie n="1">
-      <consigne>Construire une feuille de styles pour afficher les contenus étiquetés avec TreeTagger</consigne>
+      <consigne>Construire une feuille de styles pour afficher les contenus étiquetés des « titres » uniquement</consigne>
       <reponse xsl="./13-1-1.xsl"></reponse>
-      <resultat sortie="./sortie-13-1-1.txt"></resultat>
+      <resultat sortie="./sortie-13-1-1.html"></resultat>
     </partie>
     <partie n="2">
-      <consigne>Construire des feuilles de style pour extraire (au format TXT) au moins 3 patrons morphosyntaxiques (de longueurs différentes) sur les mêmes fichiers</consigne>
+      <consigne>Peut-on envisager de construire une feuille de styles pour afficher chaque « titre » en regard de sa « description » : par exemple un tableau avec 2 colonnes, à gauche les titres et à droite les descriptions (un alignement en somme) ? si cela n’est pas possible directement, quel est l’alignement minimal que l’on peut mettre en œuvre ? Construire cet alignement minimal…</consigne>
       <reponse xsl="./13-1-2.xsl"></reponse>
-      <resultat sortie="./sortie-13-1-2.txt"></resultat>
+      <resultat sortie="./sortie-13-1-2.html"></resultat>
     </partie>
     <partie n="3">
-      <consigne>Construire une feuille de styles pour afficher les contenus étiquetés avec TreeTagger en mettant au jour un patron morphosyntaxique.</consigne>
+      <consigne>Construire des feuilles de style pour extraire (au format TXT) au moins 3 patrons morphosyntaxiques (de longueurs différentes) sur les « titres » uniquement puis sur les « descriptions » uniquement</consigne>
       <reponse xsl="./13-1-3.xsl"></reponse>
-      <resultat sortie="./sortie-13-1-3.html"></resultat>
+      <resultat sortie="./sortie-13-1-3.txt"></resultat>
+    </partie>
+    <partie n="4">
+      <consigne>Construire une feuille de styles pour afficher les contenus étiquetés en mettant au jour un patron morphosyntaxique sur les « titres » uniquement puis sur les « descriptions » uniquement</consigne>
+      <reponse xsl="./13-1-4.xsl"></reponse>
+      <resultat sortie="./sortie-13-1-4.html"></resultat>
+    </partie>
+    <partie n="5">
+      <consigne>Construire une feuille de styles pour extraire (au format TXT) les items en relation de dépendance syntaxique de type OBJ (les classer et les compter). Essayer de tenir compte de la différence titre/description</consigne>
+      <reponse xsl="./13-1-5.xsl"></reponse>
+      <resultat sortie="./sortie-13-1-5.txt"></resultat>
+    </partie>
+    <partie n="6">
+      <consigne>Construire une feuille de styles pour extraire la liste des POS en relation de dépendance syntaxique de type OBJ (les classer et les compter)</consigne>
+      <reponse xsl="./13-1-6.xsl">Ici, nous avons utilisé l'instruction for-each-group en XSLT 2.0 pour parcourir une série de groupes, les critères de regroupement étant spécifiés par ses attributs. Notre processeur xsltproc ne fonctionne pas dans cet exercice puisqu'il est de la version 1.0. Pour réaliser la transformation, nous avons utilisé une fonctionnalité d'Oxygen - Apply Transformation Sceanarios qui soutient XSLT 2.0 </reponse>
+      <resultat sortie="./sortie-13-1-6.html"></resultat>
     </partie>
   </question>
   <question n="2" id="XQuery">
     <partie n="1">
-      <consigne>Construire une requête pour extraire les contenus textuels des titres</consigne>
+      <consigne>Construire une requête pour compter le nombre de titres, le nombre de descriptions.</consigne>
       <reponse xq="./13-2-1.xq"></reponse>
       <resultat xml="./sortie-13-2-1.xml"></resultat>
     </partie>
     <partie n="2">
-      <consigne>Construire une requête pour extraire les contenus textuels des descriptions</consigne>
+      <consigne>Construire une requête pour extraire les contenus textuels des « titres »</consigne>
       <reponse xq="./13-2-2.xq"></reponse>
       <resultat xml="./sortie-13-2-2.xml"></resultat>
     </partie>
     <partie n="3">
-      <consigne>Construire une requête pour extraire les contenus textuels des titres ET des descriptions</consigne>
+      <consigne>Construire une requête pour extraire les contenus textuels des « descriptions »</consigne>
       <reponse xq="./13-2-3.xq"></reponse>
       <resultat xml="./sortie-13-2-3.xml"></resultat>
     </partie>
     <partie n="4">
-      <consigne>Construire une requête pour extraire les patrons morpho-syntaxiques NOM ADJ</consigne>
+      <consigne>Construire une requête pour extraire les contenus textuels des titres ET des descriptions</consigne>
       <reponse xq="./13-2-4.xq"></reponse>
       <resultat xml="./sortie-13-2-4.xml"></resultat>
     </partie>
     <partie n="5">
-      <consigne>Construire une requête pour extraire les patrons morpho-syntaxiques NOM PRP NOM</consigne>
+      <consigne>Construire une requête pour extraire au moins 3 patrons morpho-syntaxiques (de longueurs différentes)</consigne>
       <reponse xq="./13-2-5.xq"></reponse>
       <resultat xml="./sortie-13-2-5.xml"></resultat>
+    </partie>
+    <partie n="6">
+      <consigne>Construire une requête pour extraire les items portant une relation de dépendance syntaxique de type OBJ</consigne>
+      <reponse xq="./13-2-6.xq"></reponse>
+      <resultat xml="./sortie-13-2-6.xml"></resultat>
+    </partie>
+    <partie n="7">
+      <consigne>Construire une requête pour extraire les items en relation de dépendance syntaxique de type SUB (on affichera les formes ou les lemmes connectés par cette relation)</consigne>
+      <reponse xq="./13-2-7.xq"></reponse>
+      <resultat xml="./sortie-13-2-7.xml"></resultat>
     </partie>
   </question>
 </exercice>

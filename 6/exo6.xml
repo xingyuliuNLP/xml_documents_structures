@@ -2,42 +2,54 @@
 <?xml-stylesheet type="text/xsl" href="exo6.xsl"?>
 
 <exercice n="6">
-    <titre>EXERCICE 6</titre>
-    <description>Exploration d'un fichier TEI</description>
-    <question n="1">
-        <consigne chemin="./exercices/exo6/consigne_exo6_1.jpg"></consigne>
-        <reponse xsl="./exercices/exo6/Exo6_Partie1.xsl" xslhtml="./exercices/exo6/Exo6_Partie1.html" sortie="./exercices/exo6/dormeur-tei1.xml"></reponse>
-    </question>
-    <question n="2">
-        <consigne chemin="./exercices/exo6/consigne_exo6_2.jpg"></consigne>
-        <reponse xsl="./exercices/exo6/Exo6_Partie2.xsl" xslhtml="./exercices/exo6/Exo6_Partie2.html" sortie="./exercices/exo6/dormeur-tei2.xml"></reponse>
-    </question>
-    <question n="3">
-        <consigne chemin="./exercices/exo6/consigne_exo6_3.jpg"></consigne>
-        <reponse xsl="./exercices/exo6/Exo6_Partie3.xsl" xslhtml="./exercices/exo6/Exo6_Partie3.html" sortie="./exercices/exo6/dormeur-tei3.xml"></reponse>
-    </question>
-    <question n="4">
-        <consigne chemin="./exercices/exo6/consigne_exo6_4.jpg"></consigne>
-        <reponse xsl="./exercices/exo6/Exo6_Partie4.xsl" xslhtml="./exercices/exo6/Exo6_Partie4.html" sortie="./exercices/exo6/dormeur-tei4.xml"></reponse>
-    </question>
-    <question n="5">
-        <consigne chemin="./exercices/exo6/consigne_exo6_5.jpg"></consigne>
-        <reponse xsl="./exercices/exo6/Exo6_Partie5.xsl" xslhtml="./exercices/exo6/Exo6_Partie5.html" sortie="./exercices/exo6/dormeur-tei5.xml"></reponse>
-    </question>
-    <question n="6">
-        <consigne chemin="./exercices/exo6/consigne_exo6_6.jpg"></consigne>
-        <reponse xsl="./exercices/exo6/Exo6_Partie6.xsl" xslhtml="./exercices/exo6/Exo6_Partie6.html" sortie="./exercices/exo6/dormeur-tei6.xml"></reponse>
-    </question>
-    <question n="7">
-        <consigne chemin="./exercices/exo6/consigne_exo6_7.jpg"></consigne>
-        <reponse xsl="./exercices/exo6/Exo6_Partie7.xsl" xslhtml="./exercices/exo6/Exo6_Partie7.html" sortie="./exercices/exo6/dormeur-tei7.xml"></reponse>
-    </question>
-    <question n="8">
-        <consigne chemin="./exercices/exo6/consigne_exo6_8.jpg"></consigne>
-        <reponse xsl="./exercices/exo6/Exo6_Partie8.xsl" xslhtml="./exercices/exo6/Exo6_Partie8.html" sortie="./exercices/exo6/dormeur-tei8.xml"></reponse>
-    </question>
-    <question n="9">
-        <consigne chemin="./exercices/exo6/consigne_exo6_9.jpg"></consigne>
-        <reponse xsl="./exercices/exo6/Exo6_Partie9.xsl" xslhtml="./exercices/exo6/Exo6_Partie9.html" sortie="./exercices/exo6/dormeur-tei9.xml"></reponse>
-    </question>
+  <titre>EXERCICE 6</titre>
+  <description>Exploration d’un fichier TEI</description>
+  <source xml="./dormeur-tei.xml">Fichier de Travail : le dormeur du val (tei)</source>
+  <question n="1" id="XSLT">
+    <partie n="1">
+      <consigne>Afficher le nom de l'auteur, le titre du poème, la date, et le recueil, dans cet ordre et au sein d'une page HTML bien formée.</consigne>
+      <reponse xsl="./q1.xsl"></reponse>
+      <resultat sortie="./q1.html"></resultat>
+    </partie>
+    <partie n="2">
+      <consigne>Afficher le titre et la date du poème, les vers les uns après les autres, sans balise (sortie texte brut)</consigne>
+      <reponse xsl="./q2.xsl"></reponse>
+      <resultat sortie="./q2.txt"></resultat>
+    </partie>
+    <partie n="3">
+      <consigne>Afficher le 1 er et le 3 ème vers de chaque groupe de vers au sein d'une page HTML bien formée.</consigne>
+      <reponse xsl="./q3.xsl"></reponse>
+      <resultat sortie="./q3.html"></resultat>
+    </partie>
+    <partie n="4">
+      <consigne>Afficher seulement le 1 er et le 3 ème quatrain au sein d'une page HTML bien formée.</consigne>
+      <reponse xsl="./q4.xsl"></reponse>
+      <resultat sortie="./q4.html"></resultat>
+    </partie>
+    <partie n="5">
+      <consigne>Afficher chaque vers précédé de son numéro d'ordre au sein du groupe de vers (&lt;lg&gt;).</consigne>
+      <reponse xsl="./q5.xsl"></reponse>
+      <resultat sortie="./q5.html"></resultat>
+    </partie>
+    <partie n="6">
+      <consigne>Idem en ajoutant à chaque groupe de vers son numéro d'ordre.</consigne>
+      <reponse xsl="./q6.xsl"></reponse>
+      <resultat sortie="./q6.html"></resultat>
+    </partie>
+    <partie n="7">
+      <consigne>Engendrer une page HTML bien formée dans laquelle le poème (seul, sans titre) est au sein d'un tableau, avec une ligne par vers, et une ligne entre chaque strophe. Penser à aligner les lignes à gauche.</consigne>
+      <reponse xsl="./q7.xsl"></reponse>
+      <resultat sortie="./q7.html"></resultat>
+    </partie>
+    <partie n="8">
+      <consigne>Afficher les vers qui contiennent un point-virgule ou deux points (:) (format texte brut).</consigne>
+      <reponse xsl="./q8.xsl"></reponse>
+      <resultat sortie="./q8.txt"></resultat>
+    </partie>
+    <partie n="9">
+      <consigne>Afficher les quatrains en gras et les tercets en italiques au sein d'une page HTML bien formée.</consigne>
+      <reponse xsl="./q9.xsl"></reponse>
+      <resultat sortie="./q9.html"></resultat>
+    </partie>
+  </question>
 </exercice>
